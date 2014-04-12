@@ -112,8 +112,5 @@ $autoload['language'] = array();
 $autoload['model'] = array();
 
 
-$autoload['libraries'] = array('database');
-
-$autoload['helper'] = array('form', 'url', 'blog');
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

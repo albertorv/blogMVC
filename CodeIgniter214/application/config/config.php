@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/blogMVC/CodeIgniter214/';
+$config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
