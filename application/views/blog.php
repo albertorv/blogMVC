@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>Bienvenidos a mi Blog</h1>
+<h1><strong>Bienvenidos a mi Blog<strong/></h1>
 	<h2>Tecnologías</h2>
 <!--<div id="container" style="height: 800px;">
 	<h1>Bienvenido a <?php ; ?></h1>
