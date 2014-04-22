@@ -12,16 +12,13 @@
     </div>
     
     <div >
-        <form  method="post" action="<?php echo base_url().'/index.php/blog/update_comment'; ?>" name="process">  <!--esta linea no deja mostrar el form-->
-            <h2>LOGIN</h2>
-            <br>
-            <label for="username">Usuario: </label>
+            <?php= form_open(base_url().'Login/process/')?>
+            <p>Usuario: <?php=form_input('user')?></p>
             <input type="text" name="username" id="username" size="25"/><br>
-            <label for="password">Contraseña: </label>
+            <p>Contraseña: <?php=form_input('password')?></p>
             <input type="password" name="password" id="password" size="25"/><br>
-
-            <input type="Submit" value="Login"/>
-        </form>
+           <input type="Submit" value="Login"/>
+            <?php= form_submit('Submit', 'Login')?><br>
     </div>
 </body>
 </html>

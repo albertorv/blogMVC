@@ -18,8 +18,9 @@ class Blog_model extends CI_Model {
       $this -> db -> select('user, password'); //Indicamos los campos que usaremos del resultado de la consulta
       $this -> db -> from('administrador'); // indicamos la tabla a usar
       $this -> db -> where('user = ' . "'" . $username . "'"); // Indicamos que va a buscar el nombre de usuario
-      $this -> db -> where('pass = ' . "'" . MD5($password) . "'"); // Indicamos que va a buscar el password con MD5
+      $this -> db -> where('password = ' . "'" . MD5($password) . "'"); // Indicamos que va a buscar el password con MD5
       $this -> db -> limit(1);
+      
                 // Solo deberá de existir un usuario
        
       $query = $this -> db -> get(); 
@@ -28,7 +29,7 @@ class Blog_model extends CI_Model {
       if($query -> num_rows() == 1)
       {
          return $query->result();
-                        // Existen nombre de usuario y contra seña.
+                        // Existen nombre de usuario y contraseña.
       }
       else
       {

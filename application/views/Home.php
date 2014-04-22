@@ -11,7 +11,7 @@
     
     public function index(){
         // If the user is validated, then this function will run
-        echo 'Congratulations, you are logged in.';
+        echo 'Felicidades, usuario ingresado';
         // Add a link to logout
         echo '<br /><a href=''.base_url().'home/do_logout'>Logout Fool!</a>';
     }
